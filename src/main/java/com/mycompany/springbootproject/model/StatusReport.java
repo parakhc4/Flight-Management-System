@@ -4,19 +4,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
 @Entity
 @Table(name = "statTable")
 public class StatusReport {
-    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int statusId;
 

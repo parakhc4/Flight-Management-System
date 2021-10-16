@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "deptTable")
 public class Department {
-    @Id
     @Column(name = "departId", nullable = false)
     private int departId;
     private String departName;

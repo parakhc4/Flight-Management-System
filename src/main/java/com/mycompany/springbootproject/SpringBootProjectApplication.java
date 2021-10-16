@@ -22,7 +22,7 @@ public class SpringBootProjectApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		list = Arrays.asList("Parakh Chaudhary","Niloy Chakravorty","Pallab De","Mohommad Faizan");
+		list = Arrays.asList("Parakh Chaudhary");
 	}
 
 }

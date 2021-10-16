@@ -9,14 +9,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
 @Entity
 @Table(name = "empTable")
 public class Employee {
-    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Size(min = 2, max = 20)
