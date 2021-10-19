@@ -9,7 +9,7 @@ public interface AirportService {
 
     public List<Airport> getAll();
 
-    public Airport addFlight(Airport airport);
+    public Airport addFlight(Airport airport, int id);
 
     public Airport fetchById(int id);
 

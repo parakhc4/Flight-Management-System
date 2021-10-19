@@ -29,9 +29,9 @@ public class AirportController {
     }
 
     @ApiOperation("Save a New Flight Route") // annotation to describe the endpoint and its response type
-    @PostMapping("/add") // Annotation for mapping HTTP POST requests onto specific handler methods.
-    public ResponseEntity<Airport> createFlightRoute(@Valid @RequestBody Airport airport) {
-        Airport cust = airportService.addFlight(airport);
+    @PostMapping("/add/{flightId}") // Annotation for mapping HTTP POST requests onto specific handler methods.
+    public ResponseEntity<Airport> createFlightRoute(@Valid @RequestBody Airport airport, @PathVariable int flightId) {
+        Airport cust = airportService.addFlight(airport,flightId);
         return new ResponseEntity<>(cust, HttpStatus.CREATED);
     }
 

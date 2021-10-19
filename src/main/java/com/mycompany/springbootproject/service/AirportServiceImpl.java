@@ -20,7 +20,8 @@ public class AirportServiceImpl implements AirportService {
     }
 
     @Override
-    public Airport addFlight(Airport airport) {
+    public Airport addFlight(Airport airport, int id) {
+        airport.setFlight_No(id);
         airportRepository.save(airport);
         return airport;
     }
