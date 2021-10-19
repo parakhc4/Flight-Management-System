@@ -1,9 +1,11 @@
 package com.mycompany.springbootproject.service;
 
 import com.mycompany.springbootproject.model.Flight;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface FlightService {
 
     public List<Flight> getAll();

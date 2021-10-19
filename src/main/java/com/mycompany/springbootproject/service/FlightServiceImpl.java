@@ -1,14 +1,15 @@
 package com.mycompany.springbootproject.service;
 
 import com.mycompany.springbootproject.model.Flight;
-import com.mycompany.springbootproject.repository.EmployeeRepository;
 import com.mycompany.springbootproject.repository.FlightRepository;
+import com.mycompany.springbootproject.service.FlightService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
-public class FlightServiceImpl implements FlightService{
+@Service
+public class FlightServiceImpl implements FlightService {
 
     @Autowired
     private FlightRepository flightRepository;
